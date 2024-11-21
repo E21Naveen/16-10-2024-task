@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is todays dom topic</h1>
+    <p>about the dom</p>
+    <ul>
+        <li>Naveen</li>
+        <li>Surya</li>
+        <li>Prasana</li>
+    </ul>
+
+    <script>
+        const par = document.getElementsByTagName("p")[0];
+        console.log(par);
+        par.innerText = "explained about the dom";
+
+        const uls = document.querySelector("ul");
+        const newli = document.createElement("li");
+        newli.textContent = "Mahesh";
+        uls.appendChild(newli);
+    </script>
+</body>
+
+</html>
